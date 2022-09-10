@@ -21,7 +21,14 @@ const emojiList = {
   "🏂": "Snowboarder",
   "🏌️": "Golfing",
   "🏄": "Surfing",
-  "Wrestling": "🤼"
+  "Wrestling" : "🤼",
+  "Surfing" : "🏄",
+  "Golfing" : "🏌️",
+  "Snowboarder" : "🏂",
+  "Skiing" : "⛷️",
+  "Wrestling" : "🤼",
+  "Fencing" : "🤺",
+  "Climbing" : "🧗"
 }
 
 var emojiKnown = Object.keys(emojiDictionary);
