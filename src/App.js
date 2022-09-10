@@ -26,7 +26,6 @@ const emojiList = {
   "Golfing" : "🏌️",
   "Snowboarder" : "🏂",
   "Skiing" : "⛷️",
-  "Wrestling" : "🤼",
   "Fencing" : "🤺",
   "Climbing" : "🧗"
 }
