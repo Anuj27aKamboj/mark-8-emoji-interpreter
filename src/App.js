@@ -8,9 +8,14 @@ var emojiDictionary = {
   "🤺": "Fencing",
   "🤼": "Wrestling",
   "⛷️": "Skiing",
-  "🏂": "Snowboarder",
+  "🏂": "Snowboarding",
   "🏌️": "Golfing",
-  "🏄": "Surfing"
+  "🏄": "Surfing",
+  "🚴": "Cycling",
+  "🏊": "Swimming",
+  "🤹": "Juggling",
+  "🏃": "Running",
+  "🚣": "Boating"
 };
 
 const emojiList = {
@@ -18,16 +23,27 @@ const emojiList = {
   "🤺": "Fencing",
   "🤼": "Wrestling",
   "⛷️": "Skiing",
-  "🏂": "Snowboarder",
+  "🏂": "Snowboarding",
   "🏌️": "Golfing",
   "🏄": "Surfing",
-  "Wrestling" : "🤼",
-  "Surfing" : "🏄",
-  "Golfing" : "🏌️",
-  "Snowboarder" : "🏂",
-  "Skiing" : "⛷️",
-  "Fencing" : "🤺",
-  "Climbing" : "🧗"
+  "🚴": "Cycling",
+  "🏊": "Swimming",
+  "🤹": "Juggling",
+  "🏃": "Running",
+  "🚣": "Boating",
+
+  "Climbing":"🧗" ,
+  "Fencing" :"🤺" ,
+  "Wrestling":"🤼" ,
+  "Skiing" :"⛷️" ,
+  "Snowboarding":"🏂",
+  "Golfing":"🏌️" ,
+  "Surfing":"🏄" ,
+  "Cycling":"🚴" ,
+  "Swimming":"🏊" ,
+  "Juggling":"🤹" ,
+  "Running":"🏃" ,
+  "Boating":"🚣" 
 }
 
 var emojiKnown = Object.keys(emojiDictionary);
@@ -55,7 +71,7 @@ export default function App() {
     <div className="App">
       <h1 style={{ backgroundColor: color }}>Activity Dictionary</h1>
       <input onChange={emojiInputHandler} placeholder="🔍 Enter your emoji here"/>
-      <h2>{meaning}</h2>
+      <h2 style={{color : "#65a30d"}}>{meaning}</h2>
 
       <h3>Emoji we Know : </h3>
       {emojiKnown.map(function (emoji) {
